@@ -30,10 +30,9 @@
 # MYSQL
 ```
     docker run --rm \
-    --name mysqlx \
-    -e MYSQL_DATABASE=ebook_chat_app \
-    -e MYSQL_USER=chat_app \
+    --name mysql_server \
     -e MYSQL_ROOT_PASSWORD=chat_app123 \
+    -e MYSQL_DATABASE=ebook_chat_app \
     -p 3306:3306 \
     mysql:8.0
 ```
